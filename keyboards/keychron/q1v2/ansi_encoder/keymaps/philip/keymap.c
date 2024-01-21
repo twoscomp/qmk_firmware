@@ -83,12 +83,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 #if defined(RGB_MATRIX_ENABLE) && defined(CAPS_LOCK_LED_INDEX)
+#define CAPS_LOCK_LED_COLOR 0x06, 0x5D, 0x55
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     if (host_keyboard_led_state().caps_lock) {
         for (uint8_t i = led_min; i <= led_max; i++) {
-            if (i != CAPS_LOCK_LED_INDEX) {
-                rgb_matrix_set_color(i, RGB_RED);
-            }
+            rgb_matrix_set_color(i, CAPS_LOCK_LED_COLOR);
         }
     } else {
         if (!rgb_matrix_get_flags()) {
