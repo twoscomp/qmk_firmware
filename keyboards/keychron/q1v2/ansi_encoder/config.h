@@ -26,3 +26,5 @@
 
 /* Enable caps-lock LED */
 #define CAPS_LOCK_LED_INDEX 45
+#define CAPS_LOCK_INDICATOR_LED_MIN 0
+#define CAPS_LOCK_INDICATOR_LED_MAX 14
