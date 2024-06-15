@@ -30,3 +30,6 @@
 #define SPI_SCK_PIN GP2
 #define SPI_MISO_PIN GP0
 #define SPI_MOSI_PIN GP7
+
+/* Invert scroll wheel */
+#define PLOOPY_DRAGSCROLL_INVERT
