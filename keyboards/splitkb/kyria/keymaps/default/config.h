@@ -35,3 +35,5 @@
 #    endif
 #endif
 
+// Fix for MT(ctrl, esc) registering as esc when doing quick combos.
+#define PERMISSIVE_HOLD
