@@ -36,4 +36,5 @@
 #endif
 
 // Fix for MT(ctrl, esc) registering as esc when doing quick combos.
-#define PERMISSIVE_HOLD
+// https://github.com/qmk/qmk_firmware/blob/master/docs/tap_hold.md
+#define TAPPING_TERM 100
